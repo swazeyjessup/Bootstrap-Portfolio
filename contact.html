@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,62 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 </head>
-<body>
-        <nav class="nav navbar-expand-lg navbar-light bg-light text-center">
-                <div class="bg-info text-light h1 mr-auto" >Swazey Jessup</div>
-                <a class="nav h4 text-muted" href="index.html">About</a>
-                <a class="nav h4 text-muted" href="portfolio.html">Portfolio</a>
-                <a class="nav h4 text-muted" href="contact.html">Contact</a>
-        </nav>
 
-            <div>
-                    <section class="bg-light border mx-2 mb-2">
-                      <h1>Contact</h1>
-                
-                      <form >
-                        <ul>
-                          <li>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                          </li>
-                          <li>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                          </li>
-                          <li>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required="required"></textarea>
-                          </li>
-                        </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <h3 class="text-light">Swazey Jessup</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <section class="m-auto bg-light border mx-2 mb-2 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div>
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="form-group">
+                                <label for="usr">Name</label>
+                                <input type="text" class="form-control" id="usr">
+                              </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                              </div>
+                        <div class="form-group">
+                            <label for="comment">Message:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+             
                         <input type="submit">
-                      </form>
-                
-                    </section>
-                
-                  </div>
-                
-                  <footer>
-                    <div class="border-top border-info footer-copyright text-center py-3 bg-secondary text-light ">
-                      Copyright &copy; 
-                    </div>
-                  </footer>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="border-top border-info footer-copyright text-center py-3 bg-secondary text-light ">
+            Copyright &copy;
+        </div>
+    </footer>
 </body>
+
 </html>
